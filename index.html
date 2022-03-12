@@ -18,22 +18,21 @@
         <div class="container mt-5">
             <h4 class="mb-3"> currency convert </h4>
 
-        <input class="form-control form-control-lg" type="number" id="input" placeholder="anmount" />
+        <input class="form-control form-control-lg" type="number" id="Input" placeholder="anmount" />
         <br/>
   
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">From</span>    
-        <select class="form-select form-select-lg " id="from">
-            <option >chosse</option>
-            <option value="74.6">India</option>
-            <option value="6.32">China</option>
-            <option value=" 0.37">Bahrain</option>
-            <option value="114.9">Japanese</option>
-            <option value="0.73">British</option>
-            <option value="0.88">Euro</option>
-            <option value="3.75">Saudi Arabia</option>
-            <option value="3.67">Emirati</option>
+        <select class="form-select form-select-lg "  id="value1" required>
+            <option value="US Dollar">USD - US Dollar</option>
+			<option value="Euro">EUR - Euro</option>
+			<option value="British Pound">GBP - British Pound</option>
+			<option value="Indian Rupee">INR - Indian Rupee</option>
+			<option value="Australian Dollar">AUD - Australian Dollar</option>
+			<option value="Egyptian Pound">EGP - Egyptian Pound</option>
+			<option value="Saudi Arabian Riyal">SAR - Saudi Arabian Riyal</option>
+			<option value="Emirati Dirham">AED - United Arab Emirates Dirham</option>
         </select>
     </div>
 
@@ -42,26 +41,32 @@
         
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">To</span>    
-        <select class="form-select form-select-lg " id="to">
-            <option >chosse</option>
-            <option value="74.6">India</option>
-            <option value="6.32">China</option>
-            <option value=" 0.37">Bahrain</option>
-            <option value="114.9">Japanese</option>
-            <option value="0.73">British</option>
-            <option value="0.88">Euro</option>
-            <option value="3.75">Saudi Arabia</option>
-            <option value="3.67">Emirati</option>
+        <select class="form-select form-select-lg "  id="value2" required>
+            <option value="US Dollar">USD - US Dollar</option>
+			<option value="Euro">EUR - Euro</option>
+			<option value="British Pound">GBP - British Pound</option>
+			<option value="Indian Rupee">INR - Indian Rupee</option>
+			<option value="Australian Dollar">AUD - Australian Dollar</option>
+			<option value="Saudi Arabian Riyal">SAR - Saudi Arabian Riyal</option>
+			<option value="Egyptian Pound">EGP - Egyptian Pound</option>
+			<option value="Emirati Dirham">AED - United Arab Emirates Dirham</option>
         </select>
     </div>
 
         <br/>
        
-        <button class="btn btn-primary" id="convert"  >covert</button>
+        <button class="btn Cal btn-primary"  >covert</button>
         
         <br/>
 
-        <div class="alert alert-info mt-5" id="output">
+        <div class="alert alert-info mt-5" >
+          
+            <span class="amount"></span> 
+            <span class="first"></span>
+           
+            <h3>
+            <span class="second"></span>
+        </h3>
 
         </div>
 
